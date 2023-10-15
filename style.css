@@ -1,0 +1,243 @@
+/* Style aplicado em todas as páginas */
+body, html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E1B7E5;
+}
+
+/*menu suspenso*/
+nav ul{ 
+    margin: 20px 50px 0 0;
+    text-align: left;
+    display: block; 
+}
+
+/*botão do menu suspenso*/
+nav li{ 
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid #B67CC4;
+    border-radius: 5px;
+    margin-left: 10px;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+/*link do botão do menu suspenso e menu da página Portfólio profissional*/
+nav a{ 
+    text-decoration: none;
+    background-color: #B67CC4;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 16px;
+    box-shadow: 5px 3px 5px #60035A;
+    text-shadow: 2px 2px 5px #60035A;
+}
+
+nav a:hover{
+    color: #60035A;
+    font-size: 20px;
+}
+
+/* rodapé */
+footer{ 
+    background-color: #60035A;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;   
+    line-height: 1.0;
+    padding: 10px;
+    color: white;
+    /* fixar rodapé no final da página */
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Título principal h1 */
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #60035A;
+    text-align: center;
+    color: white;
+}
+
+/* Style index - Sobre Mim */
+/* container pai da página */
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px; 
+}
+
+/* container filho */
+.index{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    border-color: #60035A;
+    border-style: double;
+    background-color: #B67CC4;
+    box-shadow: 5px 3px 8px #60035A;
+    color: white;
+    
+}
+
+/* centralizar avatar usando flexbox */
+#avatar{
+    display: flex;
+    justify-content: center;   
+}
+
+/* estilizando avatar */
+.avatar{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 3px 8px #60035A;
+}
+
+/* estilizando marcador da lista */
+.hobbies li{
+    list-style-type: square;   
+}
+
+/* Style Formação Educacional - formacao */
+
+/* container pai */
+.containerform{
+    display: flex;
+    justify-content: center;      
+} 
+
+/* box filho */
+.boxform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;  
+    border-style: double ;
+    box-shadow: 5px 3px 8px #60035A;  
+    border-color: #60035A;
+    background-color: #B67CC4;
+    padding: 16px;
+    position: relative;
+    text-align: left;
+}
+
+/* listas */
+.formacao{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.formacao b{
+    text-decoration: underline;
+}
+
+/* Style Contato */
+/* container pai da página */
+.contcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Foto */
+#foto img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 8px #60035A; 
+}
+
+/* box de links de acesso */
+.contato{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #B67CC4;
+    box-shadow: 5px 3px 8px #60035A; 
+    width: 250px;
+    height: 200px;
+}
+/* título Redes Sociais */
+.contato h2{
+    text-shadow: 2px 2px 5px #60035A;  
+}
+
+/* links de acesso */
+.redelink{
+    text-decoration: none; 
+    color: white;
+    font-weight: bold; 
+}
+
+.contato a:hover{
+    color: #60035A;
+    border-radius: 10px;
+    font-size: 20px;  
+    background-color: #E1B7E5; 
+}
+/* Style Portfólio Pessoal */
+
+/* container pai */
+.portcontainer{
+    display: flex;
+    justify-content: center; 
+    align-content: center;  
+}
+
+/* box filho */
+.boxport{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double ;
+    box-shadow: 5px 3px 8px #60035A;  
+    border-color: #60035A;
+    background-color: #B67CC4;
+    padding: 16px;
+    text-align: left;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    
+}
+/* Texto da página */
+.boxport p{
+    display: inline;
+    text-align: center;   
+}
+/* Lista com o menu de acesso aos projetos */
+.boxport li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;     
+}
+
+/* Links de acesso aos projetos */
+.linkport{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #E1B7E5;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    box-shadow: 5px 3px 5px #60035A;
+}
+
